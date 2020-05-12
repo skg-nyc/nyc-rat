@@ -321,7 +321,7 @@ var G = ( function () {
                         PS.color( prevPath[ 0 ], prevPath[ 1 ], BG_COLOR );
                         PS.alpha( prevPath[ 0 ], prevPath[ 1 ], 0 );
                         tempNum = check_which_connection( prevEndPointArr[ 0 ][ 0 ], prevEndPointArr[ 0 ][ 1 ] );
-                        PS.debug("prev point: " + prevEndPointArr[0][0] + prevEndPointArr[0][1]+ "tempNum1 = " +tempNum+"\n");
+                        // PS.debug("prev point: " + prevEndPointArr[0][0] + prevEndPointArr[0][1]+ "tempNum1 = " +tempNum+"\n");
                         compArr[ tempNum - 1 ].isConnected = false;
                         compArr[ tempNum - 1 ].color = PS.COLOR_RED;
 
