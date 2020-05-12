@@ -573,7 +573,7 @@ var G = ( function () {
             PS.color( PS.ALL, PS.ALL, BG_COLOR );
             PS.border( PS.ALL, PS.ALL, 0 );
 
-            DB.active( false );
+            DB.active( true );
             DB.init( "lostConnections", loggedIn );
 
             // PS.debug("endpoint array b1:" + endPointArr[0][0] + " " +endPointArr[0][1] +"\n");
