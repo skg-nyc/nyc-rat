@@ -332,6 +332,7 @@ var G = (function () {
     var gameOver = function() {
          PS.timerStop(timer);
          PS.statusText("Game Over! Score: " +  (counter*count_computers()));
+        DB.send();
     };
 
     var isServerClicked = function (x,y) {
@@ -596,7 +597,7 @@ var G = (function () {
 
             PS.border(PS.ALL, PS.ALL, 0);
 
-            DB.active(false);
+            DB.active(true);
             DB.init("lostConnections", loggedIn);
 
             // PS.debug("endpoint array b1:" + endPointArr[0][0] + " " +endPointArr[0][1] +"\n");
