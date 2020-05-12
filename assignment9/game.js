@@ -321,7 +321,7 @@ var G = ( function () {
                         PS.color( prevPath[ 0 ], prevPath[ 1 ], BG_COLOR );
                         PS.alpha( prevPath[ 0 ], prevPath[ 1 ], 0 );
                         tempNum = check_which_connection( prevEndPointArr[ 0 ][ 0 ], prevEndPointArr[ 0 ][ 1 ] );
-                        //PS.debug("prev point: " + prevEndPointArr[0][0] + prevEndPointArr[0][1]+ "tempNum1 = " +tempNum+"\n");
+                        PS.debug("prev point: " + prevEndPointArr[0][0] + prevEndPointArr[0][1]+ "tempNum1 = " +tempNum+"\n");
                         compArr[ tempNum - 1 ].isConnected = false;
                         compArr[ tempNum - 1 ].color = PS.COLOR_RED;
 
@@ -422,68 +422,68 @@ var G = ( function () {
     const check_which_connection = function ( x, y ) {
         // PS.debug("given x: " + x + " Given Y: " + y +"\n");
         let num;
-        if ( x === 2 && y === 2 || x === 3 && y === 2 ||
-            x === 2 && y === 3 || x === 3 && y === 3 ) {
+        if ( x == 2 && y == 2 || x == 3 && y == 2 ||
+            x == 2 && y == 3 || x == 3 && y == 3 ) {
             num = 0;
         }
-        else if ( x === 1 && y === 5 || x === 2 && y === 5 ||
-            x === 1 && y === 6 || x === 2 && y === 6 ) {
+        else if ( x == 1 && y == 5 || x == 2 && y == 5 ||
+            x == 1 && y == 6 || x == 2 && y == 6 ) {
             num = 1;
         }
-        else if ( x === 3 && y === 8 || x === 4 && y === 8 ||
-            x === 3 && y === 9 || x === 4 && y === 9 ) {
+        else if ( x == 3 && y == 8 || x == 4 && y == 8 ||
+            x == 3 && y == 9 || x == 4 && y == 9 ) {
             num = 2;
         }
-        else if ( x === 1 && y === 11 || x === 2 && y === 11 ||
-            x === 1 && y === 12 || x === 2 && y === 12 ) {
+        else if ( x == 1 && y == 11 || x == 2 && y == 11 ||
+            x == 1 && y == 12 || x == 2 && y == 12 ) {
             num = 3;
         }
-        else if ( x === 2 && y === 14 || x === 3 && y === 14 ||
-            x === 2 && y === 15 || x === 3 && y === 15 ) {
+        else if ( x == 2 && y == 14 || x == 3 && y == 14 ||
+            x == 2 && y == 15 || x == 3 && y == 15 ) {
             num = 4;
         }
-        else if ( x === 5 && y === 15 || x === 6 && y === 15 ||
-            x === 5 && y === 16 || x === 6 && y === 16 ) {
+        else if ( x == 5 && y == 15 || x == 6 && y == 15 ||
+            x == 5 && y == 16 || x == 6 && y == 16 ) {
             num = 5;
         }
-        else if ( x === 8 && y === 13 || x === 9 && y === 13 ||
-            x === 8 && y === 14 || x === 9 && y === 14 ) {
+        else if ( x == 8 && y == 13 || x == 9 && y == 13 ||
+            x == 8 && y == 14 || x == 9 && y == 14 ) {
             num = 6;
         }
-        else if ( x === 11 && y === 15 || x === 12 && y === 15 ||
-            x === 11 && y === 16 || x === 12 && y === 16 ) {
+        else if ( x == 11 && y == 15 || x == 12 && y == 15 ||
+            x == 11 && y == 16 || x == 12 && y == 16 ) {
             num = 7;
         }
-        else if ( x === 14 && y === 14 || x === 15 && y === 14 ||
-            x === 15 && y === 15 || x === 15 && y === 15 ) {
+        else if ( x == 14 && y == 14 || x == 15 && y == 14 ||
+            x == 15 && y == 15 || x == 15 && y == 15 ) {
             num = 8;
         }
-        else if ( x === 15 && y === 11 || x === 16 && y === 11 ||
-            x === 15 && y === 12 || x === 16 && y === 12 ) {
+        else if ( x == 15 && y == 11 || x == 16 && y == 11 ||
+            x == 15 && y == 12 || x == 16 && y == 12 ) {
             num = 9;
         }
-        else if ( x === 13 && y === 8 || x === 14 && y === 8 ||
-            x === 13 && y === 9 || x === 14 && y === 9 ) {
+        else if ( x == 13 && y == 8 || x == 14 && y == 8 ||
+            x == 13 && y == 9 || x == 14 && y == 9 ) {
             num = 10;
         }
-        else if ( x === 15 && y === 5 || x === 16 && y === 5 ||
-            x === 15 && y === 6 || x === 16 && y === 6 ) {
+        else if ( x == 15 && y == 5 || x == 16 && y == 5 ||
+            x == 15 && y == 6 || x == 16 && y == 6 ) {
             num = 11;
         }
-        else if ( x === 14 && y === 2 || x === 15 && y === 2 ||
-            x === 14 && y === 3 || x === 15 && y === 3 ) {
+        else if ( x == 14 && y == 2 || x == 15 && y == 2 ||
+            x == 14 && y == 3 || x == 15 && y == 3 ) {
             num = 12;
         }
-        else if ( x === 11 && y === 1 || x === 12 && y === 1 ||
-            x === 11 && y === 2 || x === 12 && y === 2 ) {
+        else if ( x == 11 && y == 1 || x == 12 && y == 1 ||
+            x == 11 && y == 2 || x == 12 && y == 2 ) {
             num = 13;
         }
-        else if ( x === 8 && y === 3 || x === 9 && y === 3 ||
-            x === 8 && y === 4 || x === 9 && y === 4 ) {
+        else if ( x == 8 && y == 3 || x == 9 && y == 3 ||
+            x == 8 && y == 4 || x == 9 && y == 4 ) {
             num = 14;
         }
-        else if ( x === 5 && y === 1 || x === 6 && y === 1 ||
-            x === 5 && y === 2 || x === 6 && y === 2 ) {
+        else if ( x == 5 && y == 1 || x == 6 && y == 1 ||
+            x == 5 && y == 2 || x == 6 && y == 2 ) {
             num = 15;
         }
         else {
@@ -573,7 +573,7 @@ var G = ( function () {
             PS.color( PS.ALL, PS.ALL, BG_COLOR );
             PS.border( PS.ALL, PS.ALL, 0 );
 
-            DB.active( true );
+            DB.active( false );
             DB.init( "lostConnections", loggedIn );
 
             // PS.debug("endpoint array b1:" + endPointArr[0][0] + " " +endPointArr[0][1] +"\n");
